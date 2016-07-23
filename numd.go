@@ -34,7 +34,7 @@ func Decline(num int, args ...string) string {
 	if len(args) != 3 {
 		return ""
 	}
-	return strconv.Itoa(num) + " " + DeclineLabel(num)
+	return strconv.Itoa(num) + " " + DeclineLabel(num, args...)
 }
 
 // DeclineLabel Numeral decline, only label
